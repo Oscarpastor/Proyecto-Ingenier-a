@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	background:#c0c0c0;
+	font-family: "Tahoma";
+
+}
+
+header, .main, footer{
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;  
+}
+
+header nav {
+	background:#f5f5f5;
+	overflow:hidden; 
+}
+
+header nav ul{
+	list-style:none;
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	padding:10px 20px;
+	display:block;
+	color: #c0000
+	text-decoration:none;
+}   
+
+header nav ul li a:hover{
+	color: #fff;
+	background: #abc;
+}
+
+aside {
+	margin-bottom: 5px;
+	width:30%;
+	background:yellow;
+	float:left;
+	padding:20px;
+	box-sizing:border-box; 
+}
+
+footer {
+	background:orange;
+	color:black;
+	clear:both;
+	padding:10px 0px;
+	text-align:center; 
+}
+

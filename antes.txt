@@ -1,0 +1,3 @@
+<form action= "usuario.php" method= "GET">
+				<h3>Iniciar Sesión</h3><div>Usuario :<input type="text" name="usuario" class="caja">Contraseña :<input type="password" name="contraseña" class="caja"><button type="button" class="btn">Ingresar</button></div>
+			</form>

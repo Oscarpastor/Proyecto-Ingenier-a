@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>LeasingJYD</title>
+		<link rel="stylesheet" type="text/css" href="JYDestilos.css">
+		<link rel="stylesheet" type="text/css" href="css/social.css">
+		<link rel="stylesheet" type="text/css" href="fonts.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/registrousuarios.css">
+		<script type="text/javascript" src="js/fundamentos2.js"></script>
+		<link rel="shortcut icon" href="imagen/home.ico" type="image/x-icon">
+		
+	</head>
+<body>
+	<header>
+		<div class="logotipo">
+			<img src="imagen/holi2.png" width="1000" alt="">
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#" target="_blank" class="icon-facebook"></a></li>
+				<li><a href="#" target="_blank" class="icon-twitter"></a></li>
+				<li><a href="#" target="_blank" class="icon-google"></a></li>
+				<li><a href="#" target="_blank" class="icon-youtube"></a></li>
+			</ul>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#">Buscar Inmuebles</a></li>			
+				<li><a href="registroinmueble.html">Publicar</a></li>
+				<li><a href="registrousuarios.html">Regístrate</a></li>
+        <li><a href="quienesomos.html">¿Quiénes somos?</a></li>
+				<div id="reloj"></div>
+				<div id="fecha"></div>
+			</ul>
+		</nav>
+	</header>
+		
+	<div class="tituloForm">
+	 <h2>FORMULARIO REGISTRO</h2>
+	</div>
+	
+	<div class="form">
+		<nav class="formu">
+			<form action="">
+				<table>
+					
+					<caption>DATOS PERSONALES</caption>
+  <tr>
+      <td><label for="primer_nombre">Primer Nombre :<h4>*</h4></label></td>
+      <td><input type="text" id="primer_nombre" class="caja" placeholder=""/></td>
+      <td><label for="segundo_nombre">Segundo Nombre :</label></td>
+      <td><input type="text" id="segundo_nombre" class="caja" placeholder="" /></td>
+    </tr>
+    <tr>
+      <td><label for="primer_apellido">Primer Apellido :<h4>*</h4></label></td>
+      <td><input type="text" id="primer_apellido" class="caja" placeholder="" /></td>
+      <td><label for="segundo_apellido">Segundo Apellido :</label></td>     
+      <td><input type="text" id="segundo_apellido" class="caja" placeholder="" /></td>
+    </tr>
+    <tr>
+        <td><label for="sexo">Sexo :<h4>*</h4></label></td>
+        <td><select id="sexo" class="caja">
+          <option value="0"selected="selected">->Selecciona<-</option>
+          <option value="1">Femenino</option>
+          <option value="2">Masculino</option>
+          </select></td>
+        <td><label for="nacimiento"> Fecha nacimiento :</label></td>
+        <td><input class="caja" type="date" name="nacimiento" step="1" min="1980-01-01" max="2050-01-01" value="<?php echo date("Y-m-d");?>"></td> 
+      </tr>
+      <tr>
+      <td><label for="tel" >Teléfono Fijo :<h4>*</h4></label></td>      
+        <td><input type="text" id="tel" class="caja" placeholder="" /></td>
+        <td><label for="celular" >Celular :</label></td>      
+        <td><input type="text" id="celular" class="caja" placeholder="" /></td>
+      </tr>
+    <tr>
+     <td><label for="tipo_documento">Tipo de Documento :<h4>*</h4></label></td>
+      <td><select id="tipo_documento" class="caja">
+              <option value="0"selected="selected">->Selecciona<-</option>
+              <option value="RC">RC</option>
+              <option value="TI">TI</option>
+              <option value="CC">CC</option>
+            </select></td>
+      <td><label for="numero_documento">Número Documento :<h4>*</h4></label></td>
+      <td><input type="text" id="numero_documento" class="caja" placeholder="Sin puntos" /></td>
+      <tr>
+      <td><label for="tarjeta">Tarjeta :<h4>*</h4></label></td>       
+      <td><select id="tarjeta"class="caja">
+            <option value="0"selected="selected">->Selecciona<-</option>
+            <option value="1">Débito</option>
+            <option value="2">Crédito</option>
+          </select></td>
+      <td><label for="num_cuenta">Número de Cuenta :<h4>*</h4></label></td>     
+      <td><input type="text" id="num_cuenta" class="caja" placeholder="" /></td>
+      </tr> 
+    <tr>
+      <td><label for="correo">Correo Electrónico :<h4>*</h4></label></td>
+      <td><input type="text" id="correo" class="caja" placeholder="" /></td>
+      <td><label for="usuario">Usuario :</label></td>
+      <td><input type="text" id="usuario" class="caja" placeholder="" /></td>
+    </tr>
+    <tr>
+      <td><label for="clave1">Contraseña :<h4>*</h4></label></td>
+      <td><input type="password" id="clave1" class="caja" placeholder=""/></td>
+      <td><label for="clave2"> Confirmar contraseña :</label></td>
+      <td><input type="password" id="clave2" class="caja" placeholder=""/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" id="enviar" class="btn" value="Enviar Registro"/></td>		
+      <td><input type="reset" id="limpiar" class="btn" value="Limpiar Formulario"/></td>
+      <td></td>
+    </tr>
+</table>
+</form>
+		</div> 	
+	</nav>
+		<footer>
+			<p>Oscar Pastor - Jonatan García JYD</p>
+		</footer>
+		<script src="js/formularioregistrousuarios.js"></script>
+</body>
+</html>

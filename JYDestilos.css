@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("imagen/fondo3.jpg");
+	font-family: "Tahoma";
+}
+
+header, .main, footer {
+	width: 90%;
+	max-width: 1000px;
+	margin: 2px auto;
+}
+
+nav {
+	background:#67C0E9;
+	margin-top:230px;
+	position: relative;
+	border-radius:  0em 0.5em;
+	font-family:sans-serif; 
+	margin-top: 180px;
+}
+
+nav ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+
+nav > ul > li {
+	float: left;
+	padding-left: 7%;
+}
+
+nav ul li a {
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:10px 10px;
+}
+
+nav ul li a:hover {
+	background:gray;
+}
+
+nav > ul > li:hover div {
+	display:table;
+}
+
+/*Submenu*/
+nav ul li div {
+	width:250px;
+	position: absolute;
+	background:#c0c0c0;
+	box-sizing:border-box;
+	display:none;
+}
+
+nav ul li div ul{
+	width:20%;
+	display:table-cell;
+	border-right:1px solid rgba(255,255,255,.5);
+	box-sizing:border-box;
+}
+
+nav ul li div ul:last-child {
+	border:none;
+}
+
+nav ul li div ul .titulo {
+	background:#000;
+	color:#fff;
+}
+
+nav ul li div ul .titulo a {
+	color:#fff;
+	padding:10px 20px;
+}
+
+
+nav ul li div ul .titulo a:hover {
+	background:none;
+}
+
+nav ul li div ul li a {
+	color:#000;
+}
+
+nav ul li div ul li a:hover {
+	color:#fff;
+}
+
+.main{
+	width: 65%;
+	padding:10px;	
+}
+
+#casa 
+{
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+#local
+{
+	margin-right: 30px;
+}
+
+#apto 
+{
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+#finca
+{
+	margin-left: 30px;
+}
+
+
+footer{
+	background:gray;
+	color:white;
+	clear:both;
+	text-align:center;
+	padding: 2.5%;
+	width: 90%;
+	height: 90px;
+	position: relative;
+	box-shadow: 1em 1em 5em rgba(0,0,0,.75)inset, 
+					3em 3em 5em rgba(225,102,0,.7);
+}
+#reloj, #fecha
+{
+	color:white;
+	padding-top: 0.25em;
+	font-size: 0.5em;
+	text-align: center;
+}
+
+.form {
+	text-align: center;
+	color: white;
+	width: 1000px;
+	height: 50px;
+	left: 90px;
+	margin: 85px;
+	margin-top: 30px;
+	position: relative;
+	margin-bottom: 2px;
+	box-sizing:border-box;
+}
+.busqueda{
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	background: white;
+	margin: 13.5%;
+	margin-top: 10px;
+}
+
+#ingreso
+{
+	background: none;
+	width:80%;
+	text-align: center;
+	margin-left: 25.5%;
+	margin-top: -25%; 
+
+}
+
+
+#mapa{
+	padding-left: 63%;
+	margin-top: -3%;
+}
+.info{
+	margin-top: -13%;
+	float: left;
+	padding-left: 15%; 
+
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 15px;
+    border: 3px solid #50d0e6;
+    border-radius: 0px;
+    background: ##d6fbae;
+    background: -webkit-gradient(linear, left top, left bottom, from(##d6fbae), to(#ffffff));
+    background: -moz-linear-gradient(top, ##d6fbae, #ffffff);
+    background: linear-gradient(to bottom, ##d6fbae, #ffffff);
+    text-shadow: #ffffe2 1px 1px 1px;
+    font: normal normal normal 19px arial;
+    color: #111111;
+    text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+    border: 3px solid #5cefff;
+    background: #ffffd1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffd1), to(#ffffff));
+    background: -moz-linear-gradient(top, #ffffd1, #ffffff);
+    background: linear-gradient(to bottom, #ffffd1, #ffffff);
+    color: #111111;
+    text-decoration: none;
+}
+.btn:active {
+    background: #96b07a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#96b07a), to(#ffffff));
+    background: -moz-linear-gradient(top, #96b07a, #ffffff);
+    background: linear-gradient(to bottom, #96b07a, #ffffff);
+}
+.btn:after{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 -4px -6px 4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-size: 100% 100%;
+}
+    .caja{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 10px;
+  margin: 5px 1px 3px 0px;
+  border: 3px solid #DDDDDD;
+    }
+ 
+  .caja:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 10px;
+  margin: 5px 1px 3px 0px;
+  border: 3px solid rgba(81, 203, 238, 1);
+    }
+
+#alerta
+{
+	color:red;
+}

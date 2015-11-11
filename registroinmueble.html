@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario Registro Inmuebles</title>
+		<link rel="stylesheet" type="text/css" href="JYDestilos.css">
+		<link rel="stylesheet" type="text/css" href="css/social.css">
+		<link rel="stylesheet" type="text/css" href="css/registroinmueble.css">
+		<link rel="stylesheet" type="text/css" href="fonts.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/fundamentos2.js"></script>
+		<link rel="shortcut icon" href="imagen/home.ico" type="image/x-icon">
+		
+	</head>
+<body>
+	<header>
+		<div class="logotipo">
+			<img src="imagen/holi2.png" width="1000" alt="">
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#" target="_blank" class="icon-facebook"></a></li>
+				<li><a href="#" target="_blank" class="icon-twitter"></a></li>
+				<li><a href="#" target="_blank" class="icon-google"></a></li>
+				<li><a href="#" target="_blank" class="icon-youtube"></a></li>
+			</ul>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#">Buscar Inmuebles</a></li>			
+				<li><a href="registroinmueble.html">Publicar</a></li>
+				<li><a href="registrousuarios.html">Regístrate</a></li>
+				<li><a href="quienesomos.html">¿Quiénes somos?</a></li>
+				<div id="reloj"></div>
+				<div id="fecha"></div>
+			</ul>
+		</nav>
+	</header>
+	<div class="tituloForm">
+		<h2>REGISTRO INMUEBLES</h2>
+	</div>
+		<div>
+		<div class="formu">
+	<section>
+	<form action="">
+	<table border="0">
+		<tr>
+			<td><label for="tipo_inmueble">Tipo de Inmueble :</label></td>
+			<td><select id="tipo_inmueble" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="Casa">Casa</option>
+					<option value="Inmueble">Inmueble</option>
+					<option value="Local">Local</option>
+				    <option value="Finca">Finca</option>
+			</select></td>
+			<td><label for="numero_banios">Número de Baños: </label></td>
+			<td><select id="numero_banios" class="caja" name="td">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="B1">1</option>
+					<option value="B2">2</option>
+					<option value="B3">3</option>
+				    <option value="B4">4</option>
+				    <option value="B5">5+</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><label for="comuna">Ubicación : </label></td>
+			<td><select id="comuna" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="01">01-Popular</option>
+					<option value="02">02-Santa Cruz</option>
+					<option value="03">03-Manrique</option>
+				    <option value="04">04-Aranjuez</option>
+				    <option value="05">05-Castilla</option>
+					<option value="06">06-Doce de Octubre</option>
+					<option value="07">07-Robledo</option>
+				    <option value="08">08-Villa Hermosa</option>
+				    <option value="09">09-Buenos Aires</option>
+					<option value="10">10-La Candelaria</option>
+					<option value="11">11-Laurele/Estadio</option>
+				    <option value="12">12-La América</option>
+				    <option value="13">13-San Javier</option>
+				    <option value="14">14-Poblado</option>
+				    <option value="15">15-Guayabal</option>
+				    <option value="16">16-Belén</option>
+				    <option value="C1">C1-San Sebastián de Palmitas</option>
+				    <option value="C2">C2-San Cristóbal</option>
+				    <option value="C3">C3-Altavista</option>
+				    <option value="C4">C4-San Antonio de Prado</option>
+				    <option value="C5">C5-Santa Elena</option> 
+					</select></td>
+			<td><label for="antiguedad">Antiguedad: </label></td>
+			<td><select id="antiguedad" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="A0">Menos de un año</option>
+					<option value="A1">Entre 1 y 10 años</option>
+					<option value="A2">Entre 11 y 20 años</option>
+					<option value="A3">Entre 21 y 30 años</option>
+				    <option value="A4">Más de 30 años</option></td>
+		</tr>
+		<tr>
+			<td><label for="estrato">Estrato: </label></td>
+			<td><select id="estrato" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="E1">1</option>
+					<option value="E2">2</option>
+					<option value="E3">3</option>
+				    <option value="E4">4</option>
+				    <option value="E5">5</option>
+				    <option value="E6">6</option>
+			</select></td>
+			<td><label for="valor_arriendo">Valor Arriendo Mensual :</label></td>
+			<td><input type="text" class="caja" id="valor_arriendo"></td>
+		</tr>
+		<tr>
+			<td><label for="area">Área(m<sup>2</sup>) : </label></td>
+			<td><select id="area" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="">Menos de 50mts</option>
+					<option value="T1">Entre 50mts y 90mts</option>
+					<option value="T2">Entre 91mts y 140mts</option>
+					<option value="T3">Entre 141mts y 300mts</option>
+				    <option value="T4">Más de 300mts</option>
+				    </select></td>
+			<td><label for="tiempo_minimo">Tiempo Mínimo Arrendamiento :</label></td>
+			<td><select id="tiempo_minimo" class="caja">
+				<option value="0"selected="selected">->Selecciona<-</option>
+				<option value="TMA1">Menos de 6 meses</option>
+				<option value="TMA2">Entre 6 meses y 12 Meses</option>
+				<option value="TMA3">Más de 12 Meses</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><label for="numero_pisos">Número de Pisos: </label></td>
+			<td><select id="numero_pisos" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="P1">1</option>
+					<option value="P2">2</option>
+					<option value="P3">3</option>
+				    <option value="P4">4+</option></td>
+			<td><label for="imagen">Imagen Inmueble :</label></td>
+			<td><input value="0" type="file" id="imagen"></td>
+		</tr>
+		<tr>
+			<td><label for="numero_hab">Número de Habitaciones: </label></td>
+			<td><select id="numero_hab" class="caja">
+					<option value="0"selected="selected">->Selecciona<-</option>
+					<option value="H1">1</option>
+					<option value="H2">2</option>
+					<option value="H3">3</option>
+				    <option value="H4">4</option>
+				    <option value="H5">5+</option></td>
+			<td><label for="descripcion">Descripción :</label></td>
+			<td><textarea value="0" name="descripcion" id="descripcion" cols="40" rows="5" placeholder="Información que desees agregar"/></textarea> </td>
+		</tr>
+		<tr>
+			<td colspan="4" align="center" ><input type="button" class="btn" id="btnregistro" value="Publicar Inmueble"></td>
+		</tr>
+	</table>
+	</form>
+	</div>
+</section>
+<script src="js/formulario_registro_inmuebles.js"></script>
+		<footer>
+			<p>Oscar Pastor - Jonatan García JYD</p>
+		</footer>
+</body>
+</html>		
